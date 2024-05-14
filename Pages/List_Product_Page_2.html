@@ -1,0 +1,822 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mua Thuốc Online | Mua Thuốc Tốt Uy Tín Tại Pharmacity</title>
+    <link rel="icon" href="../Images/logo-180x180.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../Styles/Style.css" />
+    <script src="../Scripts/Script.js"></script>
+</head>
+<body>
+    <!-- Jumpotron -->
+    <div id="jumpotron" class="jumbotron">
+        <ul class="list-inline list-unstyled phai">
+            <li><a href="https://www.pharmacity.vn/e-catalogue/">Catalogue khuyến mãi</a></li>
+            <li><a href="Contact_us.html">Trở thành Nhà Cung Cấp</a></li>
+            <li><a href="https://www.facebook.com/PharmacityVN/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow on Fackbook"><img src="../Images/iconFacebook.png" /></a></li>
+            <li><a href="https://www.youtube.com/channel/UC34rPqjyb_WCq6dMu2khYQA" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow on Youtube"><img src="../Images/iconYoutube.jpg" /></a></li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+
+    <!-- Nav -->
+    <nav id="ghim" class="affix-top" data-spy="affix" data-offset="200">
+        <div id="ghimTrang">
+            <div id="trangTrai" class="trai">
+                <a href="../Index.html"><img src="../Images/logoPharmacity.png" title="Pharmacity - Pharmacity là chuỗi nhà thuốc bán lẻ hiện đại đầu tiên và duy nhất tại thị trường Việt Nam" /></a>
+                <div id="traiSearch">
+                    <input type="text" placeholder="Bạn tìm kiếm sản phẩm gì..."><span class="glyphicon glyphicon-search"></span>
+                </div>
+            </div>
+            <div id="trangPhai" class="phai">
+                <ul class="list-inline list-unstyled phai">
+                    <li><a href="https://www.pharmacity.vn/dang-nhap">Đăng nhập</a></li>
+                    <li class="header-divider"></li>
+                    <li><a id="cart" href="https://www.pharmacity.vn/cart/">Giỏ hàng <img data-src="../Images/gioHang.png" data-hover="../Images/gioHang_hover.png" src="../Images/gioHang.png" /></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div id="ghimXanh">
+            <div id="xanhTrai" class="trai">
+                <ul class="list-inline list-unstyled trai">
+                    <li>
+                        <div class="dropdown">
+                            <a class="dropbtn but" href="https://www.pharmacity.vn/tu-van-thuoc/">Tư vấn thuốc <span class="glyphicon glyphicon-chevron-down"></span></a>
+                            <div class="dropdown-content">
+                                <a href="https://www.pharmacity.vn/mua-thuoc-theo-toa/">Đăng Toa Thuốc</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a class="dropbtn but" href="List_Product_Page_1.html">sản phẩm <span class="glyphicon glyphicon-chevron-down"></span></a>
+                            <div class="dropdown-content bigDrop">
+                                <h4>Tất cả sản phẩm</h4>
+                                <div class="tab">
+                                    <a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/" class="tablinks" onmouseover="openCity(event, 'tkkd')">Thuốc không kê đơn <span class="glyphicon glyphicon-menu-right"></span></a>
+                                    <a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/" class="tablinks" onmouseover="openCity(event, 'tpcn')">Thực phẩm chức năng <span class="glyphicon glyphicon-menu-right"></span></a>
+                                    <a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/" class="tablinks" onmouseover="openCity(event, 'cssk')">Chăm sóc sức khỏe <span class="glyphicon glyphicon-menu-right"></span></a>
+                                    <a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/" class="tablinks" onmouseover="openCity(event, 'cscn')">Chăm sóc cá nhân <span class="glyphicon glyphicon-menu-right"></span></a>
+                                    <a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-sac-dep/" class="tablinks" onmouseover="openCity(event, 'cssd')">Chăm sóc sắc đẹp <span class="glyphicon glyphicon-menu-right"></span></a>
+                                    <a href="https://www.pharmacity.vn/danh-muc-san-pham/san-pham-tien-loi/" class="tablinks" onmouseover="openCity(event, 'sptl')">Sản phẩm tiện lợi <span class="glyphicon glyphicon-menu-right"></span></a>
+                                </div>
+                                <div id="tkkd" class="tabcontent display">
+                                    <ul class="list-unstyled">
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-khang-di-ung/">Thuốc Kháng Dị Ứng</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-khang-viem/">Thuốc Kháng Viêm</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-ngua-thai/">Thuốc Ngừa Thai</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-cam-lanh-ho/">Thuốc Cảm Lạnh, Ho</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-da-lieu/">Thuốc Da Liễu</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-giam-can-thuoc-khong-ke-don/">Thuốc Giảm Cân</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-mat-tai-mui/">Thuốc Mắt / Tai / Mũi</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-tieu-hoa/">Thuốc Tiêu Hóa</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-than-kinh/">Thuốc Thần Kinh</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-giam-dau-ha-sot/">Giảm Đau, Hạ Sốt</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-dau-gio-dau-cu-la/">Dầu Gió, Dầu Cù Là...</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-danh-cho-phu-nu/">Thuốc Dành Cho Phụ Nữ</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-danh-cho-nam/">Thuốc Dành Cho Nam</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-co-xuong-khop/">Thuốc Cơ Xương Khớp</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-vitamin-khoang-chat/">Vitamin &amp; Khoáng Chất</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-khac/">Thuốc Khác</a></li>
+                                    </ul>
+                                </div>
+                                <div id="tpcn" class="tabcontent">
+                                    <ul class="list-unstyled">
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-03-tpcn-nhom-ho-hap/">Nhóm Hô Hấp</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-04-tpcn-nhom-than-kinh/">Nhóm Thần Kinh</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-01-tpcn-nhom-tieu-hoa/">Nhóm Tiêu Hóa</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-05-tpcn-nhom-co-xuong-khop/">Nhóm Cơ Xương Khớp</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-09-tpcn-nhom-mat-tai-mui/">Nhóm Mắt / Tai / Mũi</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-02-tpcn-nhom-tim-mach-huyet-ap-tieu-duong/">Nhóm Tim Mạch - Huyết Áp - Tiểu Đường</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-13-tpcn-nhom-duong-ruot-men-vi-sinh/">Đường Ruột / Men Vi Sinh</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-06-tpcn-giam-can/">Giảm Cân</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-07-tpcn-dep-da/">Đẹp Da</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-12-tpcn-danh-cho-tre-em/">Dành Cho Trẻ Em</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-08-tpcn-cham-soc-suc-khoe-nam-va-nu/">Sinh Lý Nam Và Nữ</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-11-tpcn-cham-soc-toc/">Chăm Sóc Tóc</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-10-tpcn-vitamin-tong-hop-va-khoang-chat/">Vitamin Tổng Hợp &amp; Khoáng Chất</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-14-tpcn-nhom-khac/">Nhóm Khác</a></li>
+                                    </ul>
+                                </div>
+                                <div id="cssk" class="tabcontent">
+                                    <ul class="list-unstyled">
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/duoc-my-pham/">Dược Mỹ Phẩm</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/thuc-pham-dinh-duong/">Thực Phẩm Dinh Dưỡng</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/ke-hoach-gia-dinh/">Kế Hoạch Gia Đình</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/cham-soc-mat-tai-mui/">Chăm Sóc Mắt / Tai / Mũi</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/cham-soc-chan/">Chăm Sóc Chân</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/khau-trang-y-te/">Khẩu Trang</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/thiet-bi-y-te/">Thiết Bị Y Tế</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/dung-cu-so-cuu/">Dụng Cụ Sơ Cứu</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/chong-muoi/">Chống Muỗi</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/dau-tram-dau-xoa-bop/">Dầu Tràm, Dầu Xoa Bóp</a></li>
+                                    </ul>
+                                </div>
+                                <div id="cscn" class="tabcontent">
+                                    <ul class="list-unstyled">
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-em-be/">Chăm Sóc Em Bé</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/ve-sinh-phu-nu/">Vệ Sinh Phụ Nữ</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-nam-gioi/">Chăm Sóc Nam Giới</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/san-pham-phong-tam/">Sản Phẩm Phòng Tắm</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/san-pham-tay-long/">Sản Phẩm Tẩy Lông</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-co-the/">Chăm Sóc Cơ Thể</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-toc/">Chăm Sóc Tóc</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-rang-mieng/">Chăm Sóc Răng Miệng</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/san-pham-khu-mui/">Sản Phẩm Khử Mùi</a></li>
+                                        <li><a>&nbsp;</a></li>
+                                    </ul>
+                                </div>
+                                <div id="cssd" class="tabcontent">
+                                    <ul class="list-unstyled">
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-sac-dep/cham-soc-mat/">Chăm Sóc Mặt</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-sac-dep/san-pham-chong-nang/">Sản Phẩm Chống Nắng</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-sac-dep/dung-cu-trang-diem/">Dụng Cụ Trang Điểm</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-sac-dep/my-pham/">Mỹ Phẩm</a></li>
+                                    </ul>
+                                </div>
+                                <div id="sptl" class="tabcontent">
+                                    <ul class="list-unstyled">
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/san-pham-tien-loi/hang-tong-hop/">Hàng Tổng Hợp</a></li>
+                                        <li><a href="https://www.pharmacity.vn/danh-muc-san-pham/san-pham-tien-loi/hang-bach-hoa/">Hàng Bách Hóa</a></li>
+                                    </ul>
+                                </div>
+                                <div style="float: right">
+                                    <a href="https://www.pharmacity.vn/tu-khoa-san-pham/gan-khoe-bung-em/"><img src="../Images/avd.jpg"></a>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="thuongHieu">
+                                    <ul class="list-unstyled list-inline">
+                                        <li><a href="https://www.pharmacity.vn/?s=cetaphil&post_type=product"><img src="../Images/thuonghieu/logo1.jpg" /></a></li>
+                                        <li><a href="https://www.pharmacity.vn/?s=vichy&post_type=product"><img src="../Images/thuonghieu/logo2.jpg" /></a></li>
+                                        <li><a href="https://www.pharmacity.vn/?s=la%20roche-posay&post_type=product"><img src="../Images/thuonghieu/logo3.png" /></a></li>
+                                        <li><a href="https://www.pharmacity.vn/?s=betadine&post_type=product"><img src="../Images/thuonghieu/logo4.jpg" /></a></li>
+                                        <li><a href="https://www.pharmacity.vn/?s=blackmore&post_type=product"><img src="../Images/thuonghieu/logo5.jpg" /></a></li>
+                                        <li><a href="https://www.pharmacity.vn/?s=Mega%20NNO&post_type=product"><img src="../Images/thuonghieu/logo6.jpeg" /></a></li>
+                                        <li><a href="https://www.pharmacity.vn/?s=colgate&post_type=product"><img src="../Images/thuonghieu/logo7.png" /></a></li>
+                                        <li><a href="https://www.pharmacity.vn/?s=brauer&post_type=product"><img src="../Images/thuonghieu/logo8.png" /></a></li>
+                                        <li><a href="https://www.pharmacity.vn/?s=bepanthen&post_type=product"><img src="../Images/thuonghieu/logo9.jpg" /></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="but" href="https://www.pharmacity.vn/gocsuckhoe/thuong-hieu/pharmacity/">nhãn hàng pharmacity</a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a class="dropbtn but" href="https://www.pharmacity.vn/gocsuckhoe/">sống khỏe <span class="glyphicon glyphicon-chevron-down"></span></a>
+                            <div class="dropdown-content">
+                                <a href="https://www.pharmacity.vn/chuyen-muc/benh-thuong-gap/">Bệnh Thường Gặp</a><hr />
+                                <a href="https://www.pharmacity.vn/chuyen-muc/gia-dinh-gioi-tinh/">Gia Đình &amp; Giới Tính</a><hr />
+                                <a href="https://www.pharmacity.vn/chuyen-muc/benh-man-tinh/">Bệnh Mạn Tính</a><hr />
+                                <a href="https://www.pharmacity.vn/chuyen-muc/lam-dep/">Làm Đẹp</a><hr />
+                                <a href="https://www.pharmacity.vn/chuyen-muc/dinh-duong/">Dinh Dưỡng</a><hr />
+                                <a href="https://www.pharmacity.vn/chuyen-muc/tin-tuc/">Tin Tức</a><hr />
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="xanhPhai" class="phai">
+                <div id="phaiNoiDung">
+                    <p><a href="Site_Map.html">TÌM CỬA HÀNG GẦN BẠN</a></p>
+                    <p><a data-toggle="tooltip" title="18002001 18006821 (MIỄN PHÍ)" href="tel:18002001 18006821 (Miễn phí)"><span class="glyphicon glyphicon-earphone"></span> 18002001 18006821 (MIỄN PHÍ)</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </nav>
+
+    <!-- Danh sách sản phẩm -->
+    <div id="danhSachSP" class="container">
+        <div class="col-lg-4">
+            <p class="duongDan">
+                <a href="../Index.html">Trang chủ</a> /
+                Sản phẩm trang 2
+            </p>
+            <p class="hienThi">Hiển thị 21-40 trong 40 sản phẩm ở trang chủ...</p>
+            <select class="btn btn-basic">
+                <option>Thứ tự theo mức độ phổ biến</option>
+                <option>Thứ tự theo điểm đánh giá</option>
+                <option>Thứ tự theo ngày ra mắt</option>
+                <option>Thứ tự theo giá thấp nhấp</option>
+                <option>Thứ tự theo giá cao nhất</option>
+            </select>
+            <h4>CATEGORY</h4>
+            <hr />
+            <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/">Thực phẩm chức năng</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c100"></span>
+            <div id="c100" class="collapse">
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-06-02-dietary-metabolism-tpcn-h-tro-chuyen-hoa-mo/">Hỗ trợ chuyển hóa mỡ</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/tpcn-men-vi-sinh/">Men vi sinh</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-03-tpcn-nhom-ho-hap/">Nhóm hô hấp</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-01-tpcn-nhom-tieu-hoa/">Nhóm tiêu hóa</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-08-tpcn-cham-soc-suc-khoe-nam-va-nu/">Sinh lý nam và nữ</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c110"></span>
+                <div id="c110" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-08-tpcn-cham-soc-suc-khoe-nam-va-nu/6-08-02-tpcn-ho-tro-sinh-ly-nu/">TPCN hỗ trợ sinh lý nữ</a></p>
+                </div>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-12-tpcn-danh-cho-tre-em/">Dành cho trẻ em</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c120"></span>
+                <div id="c120" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-12-tpcn-danh-cho-tre-em/6-12-05-multivitamin-tpcn-t-hop-cho-tre/">Vitamin tổng hợp cho trẻ em</a></p>
+                </div>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-07-tpcn-dep-da/">Đẹp da</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-05-tpcn-nhom-co-xuong-khop/">Nhóm cơ xương khớp</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-13-tpcn-nhom-duong-ruot-men-vi-sinh/">Đường ruột / Men vi sinh</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-09-tpcn-nhom-mat-tai-mui/">Nhóm mắt / tai / mũi</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-04-tpcn-nhom-than-kinh/">Nhóm thần kinh</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-02-tpcn-nhom-tim-mach-huyet-ap-tieu-duong/">Nhóm tim mạch / huyết áp / tiểu đường</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-10-tpcn-vitamin-tong-hop-va-khoang-chat/">Vitamin tổng hợp và khoáng chất</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c130"></span>
+                <div id="c130" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-10-tpcn-vitamin-tong-hop-va-khoang-chat/6-10-01-vitamin-tong-hop/">Vitamin tổng hợp</a>
+                </div>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-11-tpcn-cham-soc-toc/">Chăm sóc tóc</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-06-tpcn-giam-can/">Giảm cân</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuc-pham-chuc-nang-06/6-14-tpcn-nhom-khac/">Nhóm khác</a></p>
+            </div>
+            <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/">Thuốc không kê đơn</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c200"></span>
+            <div id="c200" class="collapse">
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-danh-cho-nam/">Thuốc dành cho nam</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-dau-gio-dau-cu-la/">Dầu gió, dầu cù là,...</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-giam-dau-ha-sot/">Giảm đau, hạ sốt</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-cam-lanh-ho/">Thuốc cảm lạnh, ho</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-co-xuong-khop/">Thuốc cơ xương khớp</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-da-lieu/">Thuốc da liễu</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-danh-cho-phu-nu/">Thuốc dành cho phụ nữ</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-giam-can-thuoc-khong-ke-don/">Thuốc giảm cân</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-khang-di-ung/">Thuốc kháng dị ứng</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-khang-viem/">Thuốc kháng viêm</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-mat-tai-mui/">Thuốc mắt / tai /mũi</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-ngua-thai/">Thuốc ngừa thai</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-than-kinh/">Thuốc thần kinh</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-tieu-hoa/">Thuốc tiêu hóa</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-vitamin-khoang-chat/">Vitamin &amp; Khoáng chất</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/thuoc-khong-ke-don/otc-thuoc-khac/">Thuốc khác</a></p>
+            </div>
+            <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/">Chăm sóc cá nhân</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c300"></span>
+            <div id="c300" class="collapse">
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-co-the/">Chăm sóc cơ thể</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c310"></span>
+                <div id="c310" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-co-the/dau-duong-the-massage/">Dầu dưỡng &amp; massage</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-co-the/duong-the/">Dưỡng thể</a></p>
+                </div>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-em-be/">Chăm sóc em bé</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c320"></span>
+                <div id="c320" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-em-be/sua-danh-cho-be/">Sữa dành cho em bé</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-em-be/dau-goi-cho-be-cham-soc-em-be-2/">Dầu gội cho bé</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-em-be/do-dung-phong-tam-cho-be-cham-soc-em-be-2/">Đồ dùng phòng tắm cho bé</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-em-be/kem-dau-duong-cho-be/">Kem &amp; dầu dưỡng cho bé</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-em-be/khan-uot-cho-be/">Khăn ướt cho bé</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-em-be/phan-rom/">Phấn rôm</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-em-be/phu-kien-cho-be/">Phụ kiện cho bé</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-em-be/san-pham-chong-muoi-cho-be/">Sản phẩm chống muỗi cho bé</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-em-be/ta-cho-be/">Tã cho bé</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-em-be/thuc-pham-danh-cho-be/">Thực phẩm dành cho bé</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-em-be/san-pham-cham-soc-suc-khoe-cho-be/">Sản phẩm chăm sóc sức khỏe cho bé</a></p>
+                </div>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-nam-gioi/">Chăm sóc nam giới</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c330"></span>
+                <div id="c330" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-nam-gioi/cham-soc-da-mat-cho-nam/">Chăm sóc da mặt cho nam</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-nam-gioi/cham-soc-toc-cho-nam/">Chăm sóc tóc cho nam</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-nam-gioi/dao-cao-rau-bot-cao-rau/">Dao cạo râu &amp; bọt cạo râu</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-nam-gioi/khu-mui-cho-nam/">Khử mùi cho nam</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-nam-gioi/san-pham-tam-duong-the-cho-nam/">Sản phẩm tắm và &amp; dưỡng thể cho nam</a></p>
+                </div>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-rang-mieng/">Chăm sóc răng miệng</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c340"></span>
+                <div id="c340" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-rang-mieng/ban-chai-danh-rang/">Bàn chải đánh răng</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-rang-mieng/kem-danh-rang/">Kem đánh răng</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-rang-mieng/nuoc-suc-mieng/">Nước súc miệng</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-rang-mieng/tam-chi-nha-khoa/">Tăm chỉ nha khoa</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-rang-mieng/san-pham-cham-soc-rang-mieng-khac/">Sản phẩm chăm sóc răng miệng khác</a></p>
+                </div>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-toc/">Chăm sóc tóc</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c350"></span>
+                <div id="c350" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-toc/dau-goi-dau-cham-soc-toc/">Dầu gội đầu</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-toc/dau-xa-cham-soc-toc/">Dầu xả</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/cham-soc-toc/duong-toc/">Dưỡng tóc</a></p>
+                </div>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/san-pham-khu-mui/">Sản phẩm khử mùi</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c360"></span>
+                <div id="c360" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/san-pham-khu-mui/lan-khu-mui-san-pham-khu-mui/">Lăn khử mùi</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/san-pham-khu-mui/xit-khu-mui/">Xịt khử mùi</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/san-pham-khu-mui/sap-khu-mui/">Sáp khử mùi</a></p>
+                </div>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/san-pham-phong-tam/">Sản phẩm phòng tắm</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c370"></span>
+                <div id="c370" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/san-pham-phong-tam/nuoc-rua-tay/">Nước rửa tay</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/san-pham-phong-tam/sua-tam/">Sữa tắm</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/san-pham-phong-tam/xa-bong-cuc/">Xà phòng cục</a></p>
+                </div>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/san-pham-tay-long/">Sản phẩm tẩy lông</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c380"></span>
+                <div id="c380" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/san-pham-tay-long/kem-tay-long-san-pham-tay-long/">Kem tẩy lông</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/san-pham-tay-long/phu-kien-tay-long/">Phụ kiện tẩy lông</a></p>
+                </div>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/ve-sinh-phu-nu/">Vệ sinh phụ nữ</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c390"></span>
+                <div id="c390" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/ve-sinh-phu-nu/bang-ve-sinh/">Băng vệ sinh</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/ve-sinh-phu-nu/bvs-dang-ong/">BVS dạng ống</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/ve-sinh-phu-nu/bvs-hang-ngay/">BVS hàng ngày</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/ve-sinh-phu-nu/dung-dich-ve-sinh-phu-nu/">Dung dịch vệ sinh phụ nữ</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-ca-nhan/ve-sinh-phu-nu/san-pham-ve-sinh-khac/">Sản phẩm vệ sinh khác</a></p>
+                </div>
+            </div>
+            <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-sac-dep/">Chăm sóc sắc đẹp</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c400"></span>
+            <div id="c400" class="collapse">
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-sac-dep/cham-soc-mat/">Chăm sóc mặt</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c410"></span>
+                <div id="c410" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-sac-dep/cham-soc-mat/kem-tri-mun/">Kem trị mụn</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-sac-dep/cham-soc-mat/duong-moi/">Dưỡng môi</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-sac-dep/cham-soc-mat/kem-duong-am-va-duong-da/">Kem dưỡng ẩm và dưỡng da</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-sac-dep/cham-soc-mat/mat-na-duong-da/">Mặt nạ dưỡng da</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-sac-dep/cham-soc-mat/nuoc-hoa-hong-xit-khoang/">Nước hoa hồng &amp; xịt khoáng</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-sac-dep/cham-soc-mat/nuoc-tay-trang/">Nước tẩy trang</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-sac-dep/cham-soc-mat/sua-rua-mat/">Sữa rửa mặt</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-sac-dep/cham-soc-mat/tay-te-bao-chet-cho-mat/">Tẩy tế bào chết cho mặt</a></p>
+                </div>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-sac-dep/dung-cu-trang-diem/">Dụng cụ trang điểm</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c420"></span>
+                <div id="c420" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-sac-dep/dung-cu-trang-diem/cotton-dung-cu-trang-diem/">Cotton</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-sac-dep/dung-cu-trang-diem/phu-kien-lam-mong/">Phụ kiện làm móng</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-sac-dep/dung-cu-trang-diem/phu-kien-trang-diem/">Phụ kiện trang điểm</a></p>
+                </div>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-sac-dep/san-pham-chong-nang/">Sản phẩm chống nắng</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c430"></span>
+                <div id="c430" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-sac-dep/san-pham-chong-nang/duong-da-sau-khi-di-nang/">Dưỡng da sau khi đi nắng</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-sac-dep/san-pham-chong-nang/kem-chong-nang-danh-cho-mat/">Kem chống nắng dành cho mặt</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-sac-dep/san-pham-chong-nang/kem-chong-nang-toan-than/">Kem chống nắng toàn thân</a></p>
+                </div>
+            </div>
+            <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/">Chăm sóc sức khỏe</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c500"></span>
+            <div id="c500" class="collapse">
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/cham-soc-chan/">Chăm sóc chân</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c510"></span>
+                <div id="c510" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/cham-soc-chan/dung-cu-cham-soc-chan/">Dụng cụ chăm sóc chân</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/cham-soc-chan/kem-tri-nut-got-chan/">Kem trị nứt gót chân</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/cham-soc-chan/mieng-dem-chan-cham-soc-chan-2/">Miếng đệm chân</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/cham-soc-chan/san-pham-khu-mui-hoi-chan/">Sản phẩm khử mùi hôi chân</a></p>
+                </div>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/cham-soc-mat-tai-mui/">Chăm sóc tai / mũi / họng</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c520"></span>
+                <div id="c520" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/cham-soc-mat-tai-mui/nuoc-ngam-kinh-sat-trong/">Nước ngâm kính sát tròng</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/cham-soc-mat-tai-mui/thuoc-nho-mat/">Thuốc nhỏ mắt</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/cham-soc-mat-tai-mui/thuoc-xit-mui/">Thuốc xịt mũi</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/cham-soc-mat-tai-mui/san-pham-khac/">Sản phẩm khác</a></p>
+                </div>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/chong-muoi/">Chống muỗi</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/dau-tram-dau-xoa-bop/">Dầu tràm, dầu xoa bóp</a></p>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/dung-cu-so-cuu/">Dụng cụ sơ cứu</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c530"></span>
+                <div id="c530" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/dung-cu-so-cuu/bang-gac/">Băng gạc</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/dung-cu-so-cuu/ho-tro-chan-thuong-the-thao/">Hỗ trợ chấn thương thể thao</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/dung-cu-so-cuu/san-pham-cham-soc-vet-thuong/">Sản phẩm chăm sóc vết thương</a></p>
+                </div>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/duoc-my-pham/">Dược mỹ phẩm</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c540"></span>
+                <div id="c540" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/duoc-my-pham/dau-goi-dau-xa-chuyen-sau-duoc-my-pham/">Dầu gội, dầu xả chuyên sâu</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/duoc-my-pham/duong-the-chuyen-sau/">Dưỡng thể chuyên sâu</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/duoc-my-pham/kem-duong-am/">Kem dưỡng ẩm</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/duoc-my-pham/nuoc-can-bang-xit-khoang-duoc-my-pham-2/">Nước cân bằng &amp; xịt khoáng</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/duoc-my-pham/san-pham-chong-lao-hoa/">Sản phẩm chống lão hóa</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/duoc-my-pham/san-pham-chong-nang-va-sau-khi-di-nang/">Sản phẩm chống nắng và sau khi đi nắng</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/duoc-my-pham/san-pham-khu-mui-chuyen-sau/">Sản phẩm khử mùi chuyên sâu</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/duoc-my-pham/san-pham-tri-mun/">Sản phẩm trị mụn</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/duoc-my-pham/san-pham-tri-theo/">Sản phẩm trị thẹo</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/duoc-my-pham/son-duong-moi-duoc-my-pham/">Son dưỡng môi</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/duoc-my-pham/sua-rua-mat-duoc-my-pham/">Sữa rửa mặt</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/duoc-my-pham/sua-tam-chuyen-sau/">Sữa tắm chuyên sâu</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/duoc-my-pham/tay-te-bao-chet-chuyen-sau/">Tẩy tế bào chết chuyên sâu</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/duoc-my-pham/tinh-chat-serum/">Tinh chất &amp; Serum</a></p>
+                </div>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/ke-hoach-gia-dinh/">Kế hoạch gia đình</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c550"></span>
+                <div id="c550" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/ke-hoach-gia-dinh/">Bao cao su</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/ke-hoach-gia-dinh/gel-boi-tron/">Gel bôi trơn</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/ke-hoach-gia-dinh/que-thu-rung-trung/">Que thử rụng trứng</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/ke-hoach-gia-dinh/que-thu-thai/">Que thử thai</a></p>
+                </div>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/khau-trang-y-te/">Khẩu trang</a>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/thiet-bi-y-te/">Thiết bị y tế</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c560"></span>
+                <div id="c560" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/thiet-bi-y-te/may-do-duong-huyet/">Máy đo đường huyết</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/thiet-bi-y-te/may-do-huyet-ap/">Máy đo huyết áp</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/thiet-bi-y-te/nhiet-ke-thiet-bi-y-te/">Nhiệt kế</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/thiet-bi-y-te/thiet-bi-y-te-khac/">Thiết bị y tế khác</a></p>
+                </div>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/thuc-pham-chuc-nang/">Thực phẩm chức năng</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c570"></span>
+                <div id="c570" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/thuc-pham-chuc-nang/tpcn-nhom-co-xuong-thuc-pham-chuc-nang-2/">TPCN Nhóm cơ xương</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/thuc-pham-chuc-nang/tpcn-nhom-ho-hap-thuc-pham-chuc-nang-2/">TPCN Nhóm hô hấp</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/thuc-pham-chuc-nang/tpcn-nhom-than-kinh-thuc-pham-chuc-nang-2/">TPCN Nhóm thần kinh</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/thuc-pham-chuc-nang/tpcn-nhom-tieu-hoa-thuc-pham-chuc-nang-2/">TPCN Nhóm tiêu hóa</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/thuc-pham-chuc-nang/tpcn-nhom-tim-mach-huyet-ap-tieu-duong-thuc-pham-chuc-nang-2/">TPCN Nhóm tim mạch - huyết áp - tiểu đường</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/thuc-pham-chuc-nang/tpcn-tong-hop-thuc-pham-chuc-nang-2/">TPCN Tổng hợp</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/thuc-pham-chuc-nang/tpcn-khac/">TPCN Khác</a></p>
+                </div>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/thuc-pham-dinh-duong/">Thực phẩm dinh dưỡng</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c580"></span>
+                <div id="c580" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/thuc-pham-dinh-duong/sua-bot/">Sữa bột</a>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/thuc-pham-dinh-duong/thuc-pham-co-loi-cho-suc-khoe/">Thực phẩm có lợi cho sức khỏe</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/cham-soc-suc-khoe/thuc-pham-dinh-duong/thuc-uong-co-loi-cho-suc-khoe/">Thức uống có lợi cho sức khỏe</a></p>
+                </div>
+            </div>
+            <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/san-pham-tien-loi/">Sản phẩm tiện lợi</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c700"></span>
+            <div id="c700" class="collapse">
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/san-pham-tien-loi/hang-bach-hoa/">Hàng bách hóa</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c710"></span>
+                <div id="c710" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/san-pham-tien-loi/hang-bach-hoa/banh-quy/">Bánh quy</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/san-pham-tien-loi/hang-bach-hoa/banh-snack/">Bánh snack</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/san-pham-tien-loi/hang-bach-hoa/keo-gum-hang-bach-hoa-2/">Kẹo, gum</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/san-pham-tien-loi/hang-bach-hoa/san-pham-sua-va-tu-sua/">Sản phẩm sữa và từ sữa</a></p>
+                    <p class="danhMuc"><a href="pharmacity.vn/danh-muc-san-pham/san-pham-tien-loi/hang-bach-hoa/thuc-uong/">Thức uống</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/san-pham-tien-loi/hang-bach-hoa/thuc-pham-khac/">Thực phẩm khác</a></p>
+                </div>
+                <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/san-pham-tien-loi/hang-tong-hop/">Hàng tổng hợp</a></p><span class="btn glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#c720"></span>
+                <div id="c720" class="collapse">
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/san-pham-tien-loi/hang-tong-hop/do-gia-dung/">Đồ gia dụng</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/san-pham-tien-loi/hang-tong-hop/hang-danh-cho-du-lich/">Hàng dành cho du lịch</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/san-pham-tien-loi/hang-tong-hop/hang-theo-mua/">Hàng theo mùa</a></p>
+                    <p class="danhMuc"><a href="https://www.pharmacity.vn/danh-muc-san-pham/san-pham-tien-loi/hang-tong-hop/khan-giay-khan-uot/">Khăn giấy, khăn ướt</a></p>
+                </div>
+            </div>
+            <h4>BRANDS</h4>
+            <hr />
+            <div class="checkBox">
+                <ul>
+                    <li><label><input type="checkbox" value=""> 100Plus</label></li>
+                    <li><label><input type="checkbox" value=""> 1LIFE</label></li>
+                    <li><label><input type="checkbox" value=""> AA</label></li>
+                    <li><label><input type="checkbox" value=""> ACE</label></li>
+                    <li><label><input type="checkbox" value=""> ADC</label></li>
+                    <li><label><input type="checkbox" value=""> Abbott</label></li>
+                    <li><label><input type="checkbox" value=""> Abena</label></li>
+                    <li><label><input type="checkbox" value=""> Acnes</label></li>
+                    <li><label><input type="checkbox" value=""> Agi</label></li>
+                    <li><label><input type="checkbox" value=""> Aikido</label></li>
+                    <li><label><input type="checkbox" value=""> Ala - Bio</label></li>
+                    <li><label><input type="checkbox" value=""> Alcohol Pads</label></li>
+                    <li><label><input type="checkbox" value=""> Alltimes Care</label></li>
+                    <li><label><input type="checkbox" value=""> Alpenliebe</label></li>
+                    <li><label><input type="checkbox" value=""> Ameflu</label></li>
+                    <li><label><input type="checkbox" value=""> Ampharco U.S.A</label></li>
+                    <li><label><input type="checkbox" value=""> Anlene</label></li>
+                    <li><label><input type="checkbox" value=""> Antibio</label></li>
+                    <li><label><input type="checkbox" value=""> Anytime</label></li>
+                    <li><label><input type="checkbox" value=""> Aquafresh</label></li>
+                    <li><label><input type="checkbox" value=""> Atopiclair</label></li>
+                    <li><label><input type="checkbox" value=""> AumImpex</label></li>
+                    <li><label><input type="checkbox" value=""> Avene</label></li>
+                    <li><label><input type="checkbox" value=""> Axe</label></li>
+                    <li><label><input type="checkbox" value=""> Azi Mostech</label></li>
+                    <li><label><input type="checkbox" value=""> BIC</label></li>
+                    <li><label><input type="checkbox" value=""> BIDIPHAR</label></li>
+                    <li><label><input type="checkbox" value=""> Ba Tich</label></li>
+                    <li><label><input type="checkbox" value=""> Babi Mild</label></li>
+                    <li><label><input type="checkbox" value=""> Baby</label></li>
+                    <li><label><input type="checkbox" value=""> Babyganics</label></li>
+                    <li><label><input type="checkbox" value=""> Bach Tuyet</label></li>
+                    <li><label><input type="checkbox" value=""> Bao Nhien</label></li>
+                    <li><label><input type="checkbox" value=""> Bao Thach</label></li>
+                    <li><label><input type="checkbox" value=""> Bao Xuan</label></li>
+                    <li><label><input type="checkbox" value=""> Bayer HealthCare</label></li>
+                    <li><label><input type="checkbox" value=""> Beauty Fomulas</label></li>
+                    <li><label><input type="checkbox" value=""> Beejuvit</label></li>
+                    <li><label><input type="checkbox" value=""> Bella Flora</label></li>
+                    <li><label><input type="checkbox" value=""> Bellamys Organic</label></li>
+                    <li><label><input type="checkbox" value=""> Bepanthen</label></li>
+                    <li><label><input type="checkbox" value=""> Betadine</label></li>
+                    <li><label><input type="checkbox" value=""> Beurer</label></li>
+                    <li><label><input type="checkbox" value=""> Bewel</label></li>
+                    <li><label><input type="checkbox" value=""> Bibigo</label></li>
+                    <li><label><input type="checkbox" value=""> Bidophar</label></li>
+                    <li><label><input type="checkbox" value=""> Big BB</label></li>
+                    <li><label><input type="checkbox" value=""> Bio Oil</label></li>
+                    <li><label><input type="checkbox" value=""> BioCo</label></li>
+                    <li><label><input type="checkbox" value=""> Biore</label></li> 
+                </ul>
+            </div>
+            <div class="locgia">
+                <img src="../Images/locGiaSP.png" />
+                <p><span>Giá</span> 0VNĐ — 2,990,000VNĐ</p>
+            </div>
+            <button class="btn btn-loc">Lọc</button>
+        </div>
+        <div class="col-lg-8 danhSach">
+
+            <div class="container-fluid sanPham row">
+                <div class="col-lg-3">
+                    <img data-toggle="tooltip" title="Thêm vào sản phẩm yêu thích" data-placement="bottom" class="fav" data-src="../Images/fav.png" data-hover="../Images/fav_hover.png" src="../Images/fav.png" />
+                    <button class="xemNhanh btn btn-primary" data-toggle="modal" data-target="#cctp11">Xem nhanh</button>
+                    <a href="Product/CCTP_1_1.html"><img src="../Images/CCTP/cctp11.jpg" /></a>
+                    <span class="mo">Thực phẩm chức năng</span>
+                    <div><a href="Product/CCTP_1_1.html"><p>Viên nén nhai hỗ trợ bổ sung vitamin C Kids Vita C (Hộp 60 viên)</p></a></div>
+                    <p class="gia">170,100 VND<span>/Hộp</span></p>
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                    <button class="btn btn-success">Mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img data-toggle="tooltip" title="Thêm vào sản phẩm yêu thích" data-placement="bottom" class="fav" data-src="../Images/fav.png" data-hover="../Images/fav_hover.png" src="../Images/fav.png" />
+                    <button class="xemNhanh btn btn-primary" data-toggle="modal" data-target="#cctp12">Xem nhanh</button>
+                    <a href="Product/CCTP_1_2.html"><img src="../Images/CCTP/cctp12.jpg" /></a>
+                    <span class="mo">Thực phẩm chức năng</span>
+                    <div><a href="Product/CCTP_1_2.html"><p>Viên nén nhai hỗ trợ bổ sung vitamin và khoáng chất Kids Vita Multi (Hộp 60 viên)</p></a></div>
+                    <p class="gia">188,100 VND<span>/Hộp</span></p>
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                    <button class="btn btn-success">Mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img data-toggle="tooltip" title="Thêm vào sản phẩm yêu thích" data-placement="bottom" class="fav" data-src="../Images/fav.png" data-hover="../Images/fav_hover.png" src="../Images/fav.png" />
+                    <button class="xemNhanh btn btn-primary" data-toggle="modal" data-target="#cctp13">Xem nhanh</button>
+                    <a href="Product/CCTP_1_3.html"><img src="../Images/CCTP/cctp13.jpg" /></a>
+                    <span class="mo">Thực phẩm chức năng</span>
+                    <div><a href="Product/CCTP_1_3.html"><p>Viên nén nhai hỗ trợ bổ sung calci, magie và vitamin D Kids Vita Calcium Magnesium (Hộp 60 viên)</p></a></div>
+                    <p class="gia">179,100 VND<span>/Hộp</span></p>
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                    <button class="btn btn-success">Mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img data-toggle="tooltip" title="Thêm vào sản phẩm yêu thích" data-placement="bottom" class="fav" data-src="../Images/fav.png" data-hover="../Images/fav_hover.png" src="../Images/fav.png" />
+                    <button class="xemNhanh btn btn-primary" data-toggle="modal" data-target="#cctp14">Xem nhanh</button>
+                    <a href="Product/CCTP_1_4.html"><img src="../Images/CCTP/cctp14.jpg" /></a>
+                    <span class="mo">Dành cho trẻ em</span>
+                    <div><a href="Product/CCTP_1_4.html"><p>Thực phẩm bảo vệ sức khỏe Viên ngậm thảo dược</p></a></div>
+                    <p class="gia">99,000 VND<span>/Hộp</span></p>
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                    <button class="btn btn-success">Mua ngay</button>
+                </div>
+            </div>
+            <div class="container-fluid sanPham row">
+                <div class="col-lg-3">
+                    <img data-toggle="tooltip" title="Thêm vào sản phẩm yêu thích" data-placement="bottom" class="fav" data-src="../Images/fav.png" data-hover="../Images/fav_hover.png" src="../Images/fav.png" />
+                    <button class="xemNhanh btn btn-primary" data-toggle="modal" data-target="#cctp15">Xem nhanh</button>
+                    <a href="Product/CCTP_1_5.html"><img src="../Images/CCTP/cctp15.jpg" /></a>
+                    <span class="mo">Chăm sóc sức khỏe</span>
+                    <div><a href="Product/CCTP_1_5.html"><p>Bông tẩy trang cao cấp dạng tròn Pharmacity (80 miếng/túi)</p></a></div>
+                    <p class="gia">26,500 VND<span>/Túi</span></p>
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                    <button class="btn btn-success">Mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img data-toggle="tooltip" title="Thêm vào sản phẩm yêu thích" data-placement="bottom" class="fav" data-src="../Images/fav.png" data-hover="../Images/fav_hover.png" src="../Images/fav.png" />
+                    <button class="xemNhanh btn btn-primary" data-toggle="modal" data-target="#cctp21">Xem nhanh</button>
+                    <a href="Product/CCTP_2_1.html"><img src="../Images/CCTP/cctp21.jpg" /></a>
+                    <span class="mo">Nhóm tiêu hóa</span>
+                    <div><a href="Product/CCTP_2_1.html"><p>Thực phẩm bảo vệ sức khỏe FORZA Activated Charcoal (Hộp 2 vỉ x 15 viên nang)</p></a></div>
+                    <p class="gia">159,000 VND<span>/Hộp</span></p>
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                    <button class="btn btn-success">Mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img data-toggle="tooltip" title="Thêm vào sản phẩm yêu thích" data-placement="bottom" class="fav" data-src="../Images/fav.png" data-hover="../Images/fav_hover.png" src="../Images/fav.png" />
+                    <button class="xemNhanh btn btn-primary" data-toggle="modal" data-target="#cctp22">Xem nhanh</button>
+                    <a href="Product/CCTP_2_2.html"><img src="../Images/CCTP/cctp22.jpg" /></a>
+                    <span class="mo">Dành cho trẻ em</span>
+                    <div><a href="Product/CCTP_2_2.html"><p>Thực phẩm bảo vệ sức khỏe Siro thảo dược</p></a></div>
+                    <p class="gia">66,000 VND<span>/Chai</span></p>
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                    <button class="btn btn-success">Mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img data-toggle="tooltip" title="Thêm vào sản phẩm yêu thích" data-placement="bottom" class="fav" data-src="../Images/fav.png" data-hover="../Images/fav_hover.png" src="../Images/fav.png" />
+                    <button class="xemNhanh btn btn-primary" data-toggle="modal" data-target="#cctp23">Xem nhanh</button>
+                    <a href="website/CCTP_2_3.html"><img src="../Images/CCTP/cctp23.jpg" /></a>
+                    <span class="mo">Chăm sóc sức khỏe</span>
+                    <div><a href="Product/CCTP_2_3.html"><p>Gạc rơ lưỡi trẻ em Pharmacity (5 cái/hộp)</p></a></div>
+                    <p class="gia">3,800 VND<span>/Hộp</span></p>
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                    <button class="btn btn-success">Mua ngay</button>
+                </div>
+            </div>
+            <div class="container-fluid sanPham row">
+                <div class="col-lg-3">
+                    <img data-toggle="tooltip" title="Thêm vào sản phẩm yêu thích" data-placement="bottom" class="fav" data-src="../Images/fav.png" data-hover="../Images/fav_hover.png" src="../Images/fav.png" />
+                    <button class="xemNhanh btn btn-primary" data-toggle="modal" data-target="#cctp24">Xem nhanh</button>
+                    <a href="Product/CCTP_2_4.html"><img src="../Images/CCTP/cctp24.jpg" /></a>
+                    <span class="mo">Hàng tổng hợp</span>
+                    <div><a href="Product/CCTP_2_4.html"><p>Khăn ướt Pharmacity (20 tờ/gói)</p></a></div>
+                    <p class="gia">12,000 VND<span>/Gói</span></p>
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                    <button class="btn btn-success">Mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img data-toggle="tooltip" title="Thêm vào sản phẩm yêu thích" data-placement="bottom" class="fav" data-src="../Images/fav.png" data-hover="../Images/fav_hover.png" src="../Images/fav.png" />
+                    <button class="xemNhanh btn btn-primary" data-toggle="modal" data-target="#cctp25">Xem nhanh</button>
+                    <a href="Product/CCTP_2_5.html"><img src="../Images/CCTP/cctp25.jpg" /></a>
+                    <span class="mo">Nhóm thần kinh</span>
+                    <div><a href="Product/CCTP_2_5.html"><p>Thực phẩm bảo vệ sức khỏe GinkgoMax</p></a></div>
+                    <p class="gia">170,000 VND<span>/Hộp</span></p>
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                    <button class="btn btn-success">Mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img data-toggle="tooltip" title="Thêm vào sản phẩm yêu thích" data-placement="bottom" class="fav" data-src="../Images/fav.png" data-hover="../Images/fav_hover.png" src="../Images/fav.png" />
+                    <button class="xemNhanh btn btn-primary" data-toggle="modal" data-target="#lccb11">Xem nhanh</button>
+                    <a href="Product/LCCB_1_1.html"><img src="../Images/LCCB/lccb11.jpg" /></a>
+                    <span class="mo">Băng gạc</span>
+                    <div><a href="Product/LCCB_1_1.html"><p>Băng cá nhân trong suốt Urgo Transparent (100 miếng)</p></a></div>
+                    <p class="gia">67,000 VND<span>/Hộp</span></p>
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                    <button class="btn btn-success">Mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img data-toggle="tooltip" title="Thêm vào sản phẩm yêu thích" data-placement="bottom" class="fav" data-src="../Images/fav.png" data-hover="../Images/fav_hover.png" src="../Images/fav.png" />
+                    <button class="xemNhanh btn btn-primary" data-toggle="modal" data-target="#lccb12">Xem nhanh</button>
+                    <a href="Product/LCCB_1_2.html"><img src="../Images/LCCB/lccb12.jpg" /></a>
+                    <span class="mo">Băng gạc</span>
+                    <div><a href="Product/LCCB_1_2.html"><p>Băng cá nhân dành cho trẻ em Urgo Kids (8 miếng/gói)</p></a></div>
+                    <p class="gia">11,000 VND<span>/Gói</span></p>
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                    <button class="btn btn-success">Mua ngay</button>
+                </div>
+            </div>
+            <div class="container-fluid sanPham row">
+                <div class="col-lg-3">
+                    <img data-toggle="tooltip" title="Thêm vào sản phẩm yêu thích" data-placement="bottom" class="fav" data-src="../Images/fav.png" data-hover="../Images/fav_hover.png" src="../Images/fav.png" />
+                    <button class="xemNhanh btn btn-primary" data-toggle="modal" data-target="#lccb13">Xem nhanh</button>
+                    <a href="Product/LCCB_1_3.html"><img src="../Images/LCCB/lccb13.jpg" /></a>
+                    <span class="mo">Chăm sóc sức khỏe</span>
+                    <div><a href="Product/LCCB_1_3.html"><p>Dung dịch hỗ trợ điều trị da nứt nẻ Urgo Cracks Filmogel (Hộp 1 lọ)</p></a></div>
+                    <p class="gia">84,000 VND<span>/Hộp</span></p>
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                    <button class="btn btn-success">Mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img data-toggle="tooltip" title="Thêm vào sản phẩm yêu thích" data-placement="bottom" class="fav" data-src="../Images/fav.png" data-hover="../Images/fav_hover.png" src="../Images/fav.png" />
+                    <button class="xemNhanh btn btn-primary" data-toggle="modal" data-target="#lccb14">Xem nhanh</button>
+                    <a href="Product/LCCB_1_4.html"><img src="../Images/LCCB/lccb14.jpg" /></a>
+                    <span class="mo">Nhóm hô hấp</span>
+                    <div><a href="Product/LCCB_1_4.html"><p>Thực phẩm bảo vệ sức khỏe xịt keo ong xanh vị bạc hà TracyBee (30ml)</p></a></div>
+                    <p class="gia">275,000 VND<span>/Hộp</span></p>
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                    <button class="btn btn-success">Mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img data-toggle="tooltip" title="Thêm vào sản phẩm yêu thích" data-placement="bottom" class="fav" data-src="../Images/fav.png" data-hover="../Images/fav_hover.png" src="../Images/fav.png" />
+                    <button class="xemNhanh btn btn-primary" data-toggle="modal" data-target="#lccb15">Xem nhanh</button>
+                    <a href="Product/LCCB_1_5.html"><img src="../Images/LCCB/lccb15.jpg" /></a>
+                    <span class="mo">Thực phẩm chức năng</span>
+                    <div><a href="Product/LCCB_1_5.html"><p>Bộ ba viên sủi hỗ trợ sức khỏe Swiss Energy</p></a></div>
+                    <p class="gia">279,000 VND<span>/Bộ</span></p>
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                    <button class="btn btn-success">Mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img data-toggle="tooltip" title="Thêm vào sản phẩm yêu thích" data-placement="bottom" class="fav" data-src="../Images/fav.png" data-hover="../Images/fav_hover.png" src="../Images/fav.png" />
+                    <button class="xemNhanh btn btn-primary" data-toggle="modal" data-target="#lccb21">Xem nhanh</button>
+                    <a href="Product/LCCB_2_1.html"><img src="../Images/LCCB/lccb21.jpg" /></a>
+                    <span class="mo">Thực phẩm chức năng</span>
+                    <div><a href="Product/LCCB_2_1.html"><p>Viên bổ sung Vitamin C Nat C 1000 (60 viên/lọ)</p></a></div>
+                    <p class="gia">182,250 VND<span>/Hũ</span></p>
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                    <button class="btn btn-success">Mua ngay</button>
+                </div>
+            </div>
+            <div class="container-fluid sanPham row">
+                <div class="col-lg-3">
+                    <img data-toggle="tooltip" title="Thêm vào sản phẩm yêu thích" data-placement="bottom" class="fav" data-src="../Images/fav.png" data-hover="../Images/fav_hover.png" src="../Images/fav.png" />
+                    <button class="xemNhanh btn btn-primary" data-toggle="modal" data-target="#lccb22">Xem nhanh</button>
+                    <a href="Product/LCCB_2_2.html"><img src="../Images/LCCB/lccb22.jpg" /></a>
+                    <span class="mo">Nhóm tiêu hóa</span>
+                    <div><a href="Product/LCCB_2_2.html"><p>Viên uống giải độc, tăng cường chức năng gan Condition Liver (90 viên) + Tặng 1 Nước giải rượu Condition (75ml)</p></a></div>
+                    <p class="gia">550,000 VND<span>/Bộ</span></p>
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                    <button class="btn btn-success">Mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img data-toggle="tooltip" title="Thêm vào sản phẩm yêu thích" data-placement="bottom" class="fav" data-src="../Images/fav.png" data-hover="../Images/fav_hover.png" src="../Images/fav.png" />
+                    <button class="xemNhanh btn btn-primary" data-toggle="modal" data-target="#lccb23">Xem nhanh</button>
+                    <a href="Product/LCCB_2_3.html"><img src="../Images/LCCB/lccb23.jpg" /></a>
+                    <span class="mo">Chăm sóc tóc</span>
+                    <div><a href="Product/LCCB_2_3.html"><p>Thực phẩm bảo vệ sức khỏe chăm sóc da, tóc, móng Perfectil (Hộp 30 viên)</p></a></div>
+                    <p class="gia">504,000 VND<span>/Hộp</span></p>
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                    <button class="btn btn-success">Mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img data-toggle="tooltip" title="Thêm vào sản phẩm yêu thích" data-placement="bottom" class="fav" data-src="../Images/fav.png" data-hover="../Images/fav_hover.png" src="../Images/fav.png" />
+                    <button class="xemNhanh btn btn-primary" data-toggle="modal" data-target="#lccb24">Xem nhanh</button>
+                    <a href="Product/LCCB_2_4.html"><img src="../Images/LCCB/lccb24.jpg" /></a>
+                    <span class="mo">Chăm sóc sức khỏe</span>
+                    <div><a href="Product/LCCB_2_4.html"><p>Thực phẩm bảo vệ sức khỏe Đông trùng hạ thảo Alltimes Care Platinum Cordyceps (60 viên/hộp)</p></a></div>
+                    <p class="gia">850,000 VND<span>/Hộp</span></p>
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                    <button class="btn btn-success">Mua ngay</button>
+                </div>
+                <div class="col-lg-3">
+                    <img data-toggle="tooltip" title="Thêm vào sản phẩm yêu thích" data-placement="bottom" class="fav" data-src="../Images/fav.png" data-hover="../Images/fav_hover.png" src="../Images/fav.png" />
+                    <button class="xemNhanh btn btn-primary" data-toggle="modal" data-target="#lccb25">Xem nhanh</button>
+                    <a href="Product/LCCB_2_5.html"><img src="../Images/LCCB/lccb25.jpg" /></a>
+                    <span class="mo">Nhóm hô hấp</span>
+                    <div><a href="Product/LCCB_2_5.html"><p>Tinh chất thảo dược Eugica Cold &amp; Flu (10 gói/hộp)</p></a></div>
+                    <p class="gia">46,800 VND<span>/Hộp</span></p>
+                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                    <button class="btn btn-success">Mua ngay</button>
+                </div>
+            </div>
+            <!-- Chuyển trang -->
+            <div class="container choosePage">
+                <ul class="pagination">
+                    <li><a href="List_Product_Page_1.html">«</a></li>
+                    <li><a href="List_Product_Page_1.html">1</a></li>
+                    <li><a href="https://www.pharmacity.vn/san-pham/">...</a></li>
+                    <li class="disabled active"><a>2 <span class="sr-only">(current)</span></a></li>
+                    <li class="disabled"><a>»</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="col-lg-3">
+                <h2>Về Pharmacity</h2>
+                <p>Tại Pharmacity, mỗi dược sỹ luôn tận tâm phục vụ và được đào tạo để hoàn thành xuất sắc những sứ mệnh được giao....</p>
+                <a class="khongImg" href="About_us.html"><p>Tìm hiểu thêm <span class="glyphicon glyphicon-menu-right"></span></p></a>
+                <h2>Kết nối với chúng tôi</h2>
+                <hr />
+                <a href="https://www.facebook.com/PharmacityVN/" data-toggle="tooltip" title="Follow on Fackbook"><img data-src="../Images/logoFacebook.png" data-hover="../Images/logoFacebook_hover.png" src="../Images/logoFacebook.png" /></a>
+                <a href="https://www.youtube.com/channel/UC34rPqjyb_WCq6dMu2khYQA" data-toggle="tooltip" title="Follow on Youtube"><img data-src="../Images/logoYoutube.png" data-hover="../Images/logoYoutube_hover.png" src="../Images/logoYoutube.png" /></a>
+                <h2>Hotline miễn phí (7H-22H)</h2>
+                <hr />
+                <ul>
+                    <li>Đặt hàng: <a href="tel:18006820">18006820</a></li>
+                    <li>Tư vấn - Hỗ trợ: <a href="tel:18002001">18002001</a></li>
+                </ul>
+                <span>Thông tin, hình ảnh của sản phẩm trong website chỉ mang tính chất tham khảo. Sản phẩm thực tế có thể thay đổi / chênh lệch theo từng Lô sản xuất.</span>
+            </div>
+            <div class="col-lg-3">
+                <h2>Liên kết hữu ích</h2>
+                <ul>
+                    <li><a href="https://www.pharmacity.vn/faq/">Các câu hỏi thường gặp</a></li>
+                    <li><a href="Site_Map.html">Tìm cửa hàng gần bạn</a></li>
+                    <li><a href="https://www.pharmacity.vn/dich-vu-giao-hang/">Chính sách giao hàng</a></li>
+                    <li><a href="https://www.pharmacity.vn/chinh-sach-doi-tra/">Chính sách đổi trả</a></li>
+                    <li><a href="https://www.pharmacity.vn/quy-dinh-su-dung/">Chương trình ExtraCare</a></li>
+                    <li><a href="http://ir.pharmacity.vn/login">Thông báo cổ đông</a></li>
+                </ul>
+                <a href="Contact_us.html" class="btn btn-primary">Trở thành nhà cung cấp</a>
+            </div>
+            <div class="col-lg-3">
+                <h2>Từ khóa sản phẩm</h2>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/baby/" class="tuKhoa">Baby</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/beauty/" class="tuKhoa">Beauty</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/bellamys/" class="tuKhoa">Bellamys</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/bewel/" class="tuKhoa">Bewel</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/bonejoint/" class="tuKhoa">Bonejoint</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/brauer/" class="tuKhoa">Brauer</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/bach-hoa/" class="tuKhoa">bách hóa</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/cj-coupon/" class="tuKhoa">CJ coupon</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/cj-healthcare/" class="tuKhoa">CJ Healthcare</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/covid-bundle/" class="tuKhoa">covid bundle</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/de-khang/" class="tuKhoa">de khang</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/dermads/" class="tuKhoa">DermaDS</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/dottorprimo/" class="tuKhoa">Dottorprimo</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/gan-khoe-bung-em/" class="tuKhoa">Gan khỏe bụng êm</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/grocery/" class="tuKhoa">Grocery</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/health/" class="tuKhoa">Health</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/hop-qua-hamper/" class="tuKhoa">Hộp quà Hamper</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/khong-dau-re-hon/" class="tuKhoa">không đâu rẻ hơn</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/kinohimitsu/" class="tuKhoa">Kinohimitsu</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/krokos/" class="tuKhoa">Krokos</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/megabeauty/" class="tuKhoa">MegaBeauty</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/men/" class="tuKhoa">Men</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/new-year/" class="tuKhoa">New year</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/noal-legend/" class="tuKhoa">Noal Legend</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/personal/" class="tuKhoa">Personal</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/pni-kids/" class="tuKhoa">PNi Kids</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/solgar/" class="tuKhoa">Solgar</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/sp-thu-2-gia-1k/" class="tuKhoa">Sp thu 2 gia 1k</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/sua-bot-abbott/" class="tuKhoa">Sữa bột Abbott</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/thuoc-di-ung/" class="tuKhoa">Thuốc dị ứng</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/vitabiotics/" class="tuKhoa">Vitabiotics</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/women/" class="tuKhoa">women</a>
+                <a href="https://www.pharmacity.vn/tu-khoa-san-pham/dai-thao-duong/" class="tuKhoa">Đái tháo đường</a>
+            </div>
+            <div class="col-lg-3">
+                <h2>Đăng ký nhận tin mới</h2>
+                <p>Hãy đăng ký email để nhận được khuyến mãi hoặc ưu đãi mới nhất từ Pharmacity</p>
+                <input type="email" class="email" placeholder="Nhập email của bạn" />
+                <input type="submit" class="btn btn-primary" value="Đăng ký" />
+            </div>
+        </div>
+    </footer>
+
+    <!-- Phần dưới cùng -->
+    <div id="duoiCung">
+        <a href="http://online.gov.vn/Home/WebDetails/36362"><img src="../Images/downft1.png" /></a>
+        <img src="../Images/downft2.png" />
+    </div>
+
+    <!--Nút cuộn lên đầu trang-->
+    <div id="lenDauTrang" data-toggle="tooltip" data-placement="left">
+        <img data-src="../Images/ArrowUp.png" data-hover="../Images/ArrowUp_hover.png" src="../Images/ArrowUp.png">
+    </div>
+</body>
+</html>
